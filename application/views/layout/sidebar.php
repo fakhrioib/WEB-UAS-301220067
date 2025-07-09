@@ -1,7 +1,7 @@
 <?php
 $level = $this->session->userdata('user')['level'];
 ?>
-<div class="bg-light border-right" id="sidebar-wrapper" style="min-height:100vh;">
+<div class="bg-light border-right" id="sidebar-wrapper" style="min-height:100vh; min-width:200px;">
     <div class="sidebar-heading font-weight-bold">Perpus MA Al-Hijrah</div>
     <div class="list-group list-group-flush">
         <a href="<?php echo site_url('dashboard'); ?>" class="list-group-item list-group-item-action">Dashboard</a>
@@ -20,4 +20,12 @@ $level = $this->session->userdata('user')['level'];
             <a href="#" class="list-group-item list-group-item-action">Cetak Kartu Anggota</a>
         <?php endif; ?>
     </div>
+    <style>
+        @media (max-width: 767px) {
+            #sidebar-wrapper {
+                min-width: 100vw !important;
+                min-height: auto !important;
+            }
+        }
+    </style>
 </div>
