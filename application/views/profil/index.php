@@ -10,6 +10,7 @@
 <body>
     <div class="container mt-4">
         <h3>Edit Profil</h3>
+        <?php $this->load->view('layout/notifikasi'); ?>
         <?php if ($this->session->flashdata('success')): ?>
             <div class="alert alert-success"><?php echo $this->session->flashdata('success'); ?></div>
         <?php endif; ?>

@@ -10,6 +10,7 @@
 <body>
     <div class="container mt-4">
         <h3>Data Denda</h3>
+        <?php $this->load->view('layout/notifikasi'); ?>
         <form action="" method="post" class="form-inline mb-3">
             <input type="number" name="denda" class="form-control mr-2" placeholder="Harga Denda" required>
             <select name="status" class="form-control mr-2" required>

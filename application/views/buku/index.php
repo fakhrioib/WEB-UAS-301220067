@@ -10,6 +10,7 @@
 <body>
     <div class="container mt-4">
         <h3>Data Buku</h3>
+        <?php $this->load->view('layout/notifikasi'); ?>
         <a href="<?php echo site_url('buku/add'); ?>" class="btn btn-success mb-3">Tambah Buku</a>
         <table class="table table-bordered">
             <thead>

@@ -10,6 +10,7 @@
 <body>
     <div class="container mt-4">
         <h3>Data Kategori Buku</h3>
+        <?php $this->load->view('layout/notifikasi'); ?>
         <form action="" method="post" class="form-inline mb-3">
             <input type="text" name="kategori_id" class="form-control mr-2" placeholder="Nama Kategori" required>
             <button type="submit" class="btn btn-success">Tambah Kategori</button>

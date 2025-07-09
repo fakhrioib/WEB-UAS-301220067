@@ -10,6 +10,7 @@
 <body>
     <div class="container mt-4">
         <h3>Data Rak Buku</h3>
+        <?php $this->load->view('layout/notifikasi'); ?>
         <form action="" method="post" class="form-inline mb-3">
             <input type="text" name="nama_rak" class="form-control mr-2" placeholder="Nama Rak" required>
             <button type="submit" class="btn btn-success">Tambah Rak</button>
