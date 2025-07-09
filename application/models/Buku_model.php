@@ -26,4 +26,12 @@ class Buku_model extends CI_Model
         $this->db->where('id_buku', $id);
         return $this->db->delete('tb_buku');
     }
+
+    public function searchBuku($keyword)
+    {
+        $this->db->like('title', $keyword);
+        $this->db->or_like('pengarang', $keyword);
+        $this->db->or_like('penerbit', $keyword);
+        return $this->db->get('tb_buku')->result_array();
+    }
 }
